@@ -19,4 +19,4 @@ houses_outliers = houses[(houses['bathroom'] < q1 - (IQR * 1.5)) | (houses['bath
 print(houses_outliers) # Assim eu mostro os meus outliers
 
 houses_inliers = houses[(houses['bathroom'] >= q1 - (IQR * 1.5)) | (houses['bathroom'] <= q3 + (IQR * 1.5))]
-print(houses_inliers.describe())
+print(houses_inliers.describe()) # Inliers seria o que eu provavelmente gostaria de usar
